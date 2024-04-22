@@ -71,9 +71,9 @@ def publish_data_source(project_id, logger, hyper_file):
         datasource = TSC.DatasourceItem(project_id = project_id)
         publish_mode = TSC.Server.PublishMode.Overwrite
 
-        new_datasource = tableau_server.datasources.publish(
-            datasource, hyper_file, publish_mode
-        )
+        new_datasource = tableau_server \
+            .datasources \
+            .publish(datasource, hyper_file, publish_mode)
 
         ds_id = new_datasource.id
         logger.info(f"Datasource published. Datasource ID: {ds_id}")

@@ -1,7 +1,6 @@
 import os
 import os.path
 import json
-
 from utils import context
 
 directory = context.get_context(os.path.abspath(__file__))
