@@ -8,15 +8,20 @@ Sample project template with example connections to OCHIN-Epic Clarity.
 Refer to this documentation to read more about 
 [structuring our projects](https://docs.python-guide.org/writing/structure/).
 
-## Installation
+## Execution
 
-Download the project to your computer, navigate to the root folder and execute:
+Create and activate virtualenv:
 
 ``` bash
-python setup.py install
-```
+# Create venv
+virtualenv -p /usr/bin/python3 venv
 
-## Execution
+# Active venv
+source venv/bin/activate
+
+# Deactivate
+deactivate
+```
 
 To execute, navigate to the [src folder](./src) and run the following command:
 
@@ -42,5 +47,3 @@ PHI.
 - [sql](./src/sql): SQL scripts to extract datasets. Before adding SQL scripts here, 
 ensure no PHI is added in any clauses.
 - [src](./src): Main source codes of interest.
-- [venv](./src/venv): Virtual environment setup to hold packages/libraries needed to 
-execute the project.
